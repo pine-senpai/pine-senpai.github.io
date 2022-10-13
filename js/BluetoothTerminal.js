@@ -9,7 +9,7 @@ class BluetoothTerminal {
    * @param {string} [receiveSeparator='\n'] - Receive separator
    * @param {string} [sendSeparator='\n'] - Send separator
    */
-  constructor(serviceUuid = 0xFFE0, characteristicUuid = 0xFFE1,
+  constructor(serviceUuid = 4fafc201-1fb5-459e-8fcc-c5c9c331914b, characteristicUuid = beb5483e-36e1-4688-b7f5-ea07361b26a8,
       receiveSeparator = '\n', sendSeparator = '\n') {
     // Used private variables.
     this._receiveBuffer = ''; // Buffer containing not separated data.
