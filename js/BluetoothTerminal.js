@@ -242,7 +242,7 @@ class BluetoothTerminal {
     this._log('Requesting bluetooth device...');
 
     return navigator.bluetooth.requestDevice({
-      filters: [],
+      filters: [{ name: "Shagg" }],
     }).
         then((device) => {
           this._log('"' + device.name + '" bluetooth device selected');
